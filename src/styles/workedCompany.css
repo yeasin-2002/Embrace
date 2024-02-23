@@ -1,0 +1,56 @@
+#worked-company {
+  margin: 5rem auto;
+  text-align: center;
+
+  h2 {
+    font-size: var(--size-300);
+    font-weight: 900;
+    padding-bottom: var(--size-500);
+  }
+  .company-logo-container {
+    display: grid;
+    gap: 2rem 0;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+
+    img {
+      width: 40%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #worked-company {
+    h2 {
+      font-size: var(--size-500);
+    }
+
+    .company-logo-container {
+      grid-template-columns: repeat(2, 1fr);
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #worked-company {
+    .company-logo-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #worked-company {
+    .company-logo-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

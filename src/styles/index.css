@@ -1,6 +1,6 @@
 :root {
   ---blue-primary: #3461ff;
-
+  --black: 000000;
   --gray-100: rgb(243 244 246);
   --gray-200: rgb(229 231 235);
   --gray-300: rgb(209 213 219);
@@ -56,6 +56,13 @@
   --text-7xl: 4.5rem; /* 72px */
   --text-8xl: 6rem; /* 96px */
   --text-9xl: 8rem; /* 128px */
+
+  /* Responsive Breakpoint */
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
 }
 
 body {

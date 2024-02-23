@@ -5,7 +5,7 @@
   gap: 1rem;
 
   h1 {
-    font-size: var(--size-700);
+    font-size: var(--size-600);
     font-weight: 900;
   }
   p {
@@ -31,7 +31,23 @@
   justify-content: center;
 
   img {
+    display: none;
     width: 70%;
     height: 70%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #hero {
+    h1 {
+      font-size: var(--size-700);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  #hero-banner-wrapper {
+    img {
+      display: block;
+    }
   }
 }

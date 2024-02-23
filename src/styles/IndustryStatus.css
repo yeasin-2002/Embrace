@@ -1,0 +1,52 @@
+#industry-status {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  #industry-status-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    .IndustryStatusStatistics {
+      h5 {
+        color: var(--gray-900);
+        font-size: var(--size-400);
+        font-weight: bolder;
+        height: 0px;
+      }
+      p {
+        color: var(--gray-700);
+        font-size: var(--size-200);
+      }
+    }
+  }
+  #industry-commitments {
+    h3 {
+      color: var(--gray-900);
+      font-size: var(--size-500);
+    }
+    p {
+      color: var(--black);
+      opacity: 0.7;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: var(---blue-primary);
+      font-size: var(--size-200);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #industry-status {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    #industry-status-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
