@@ -1,4 +1,4 @@
-import { Hero, IndustryStatus, Nav, WorkedCompany } from './components';
+import { FAQ, Hero, IndustryStatus, Nav, WorkedCompany } from './components';
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Hero />
       <WorkedCompany />
       <IndustryStatus />
+      <FAQ />
     </>
   );
 };
