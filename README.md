@@ -1,5 +1,7 @@
-## React-ts Starter
+## Embrace Pu
 
-#### This is a simple starter for a React project with TypeScript. It includes a basic setup for a React project with TypeScript, ESLint, Prettier, and shadcn/ui.
+#### Digital Marketing Agency Landing Page
 
-Don't forget to give a `star` if you like it. ✌️
+#### Preview
+
+![Landing Page](./public/cover.svg)

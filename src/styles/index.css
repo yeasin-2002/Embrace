@@ -1,0 +1,17 @@
+:root {
+  ---blue-primary: #3461ff;
+  --gray-100: #fafafa;
+  --gray-200: #aaaaaa;
+}
+
+body {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: var(---blue-primary);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
