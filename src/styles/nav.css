@@ -2,6 +2,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #0000003c;
 
   ul {
     display: flex;
@@ -9,5 +11,9 @@ nav {
     list-style-type: none;
     gap: 0 1rem;
     text-transform: capitalize;
+    a {
+      text-decoration: none;
+      color: var(--gray-700);
+    }
   }
-} 
+}

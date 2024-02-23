@@ -10,7 +10,9 @@ export const Nav = ({ ...rest }: Props) => {
       <LogoFull />
       <ul>
         {navItem.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <a href="#">{item}</a>
+          </li>
         ))}
       </ul>
       <Button>Book a call</Button>
