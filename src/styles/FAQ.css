@@ -1,9 +1,11 @@
 #FAQ {
   display: grid;
   grid-template-columns: 1fr;
+  gap: var(--size-100);
 
   #FAQ_HowItWork-container {
     padding: var(--size-100);
+
     h5 {
       font-size: var(--size-600);
       font-weight: 300;
@@ -39,8 +41,14 @@
 @media screen and (min-width: 640px) {
   #FAQ {
     grid-template-columns: 1fr 1fr;
+    gap: var(--size-400);
     #FAQ_HowItWork-container {
       padding: var(--size-100) var(--size-200);
+
+      p {
+        color: var(--gray-500);
+        padding: var(--size-300) 0;
+      }
     }
   }
 }

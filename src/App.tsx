@@ -1,4 +1,12 @@
-import { FAQ, Hero, IndustryStatus, Nav, WorkedCompany } from './components';
+import {
+  CTABanner,
+  FAQ,
+  Hero,
+  IndustryStatus,
+  Nav,
+  OurWork,
+  WorkedCompany,
+} from './components';
 
 const App = () => {
   return (
@@ -8,6 +16,8 @@ const App = () => {
       <WorkedCompany />
       <IndustryStatus />
       <FAQ />
+      <OurWork />
+      <CTABanner />
     </>
   );
 };
