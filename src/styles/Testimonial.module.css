@@ -1,0 +1,105 @@
+#testimonial {
+  margin: var(--size-500) 0;
+  #testimonialTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0 var(--size-200);
+    margin: var(--size-400) 0;
+
+    h4 {
+      font-size: var(--size-200);
+      font-weight: 800;
+      font-family: sans-serif;
+    }
+
+    #testimonialArrowContainer {
+      display: flex;
+      gap: 0 0.5rem;
+      margin-right: var(--size-400);
+
+      #testimonialArrow {
+        padding: var(--size-100);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          border: 1px solid var(---blue-primary);
+          &:hover {
+            border: 1px solid var(--blue-800);
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: var(---blue-primary);
+          color: var(--white-100);
+          &:hover {
+            background-color: var(--blue-800);
+          }
+        }
+      }
+    }
+  }
+
+  .reviewContainer {
+    background-color: var(--gray-secondary);
+    border-radius: var(--size-200);
+    padding: 0.5rem;
+
+    .reviewerReview {
+      color: var(--gray-800);
+    }
+
+    .reviewerInfoContainer {
+      display: flex;
+      align-items: center;
+      gap: 0 0.5rem;
+      margin-bottom: var(--size-200);
+
+      .reviewerName {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin: 0 0;
+          font-size: var(--size-200);
+        }
+        h5 {
+          margin: 0 0;
+          font-size: var(--size-300);
+        }
+      }
+      img {
+        width: var(--size-600);
+        height: var(--size-600);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #testimonial {
+    #testimonialTitle {
+      margin: 0;
+      align-items: center;
+      flex-direction: row;
+      h4 {
+        font-size: var(--size-500);
+        font-weight: 800;
+        font-family: sans-serif;
+      }
+    }
+
+    #testimonialArrowContainer {
+      gap: 0 0.5rem;
+      margin-right: var(--size-400);
+
+      #testimonialArrow {
+        padding: var(--size-200);
+      }
+    }
+  }
+}
