@@ -2,6 +2,7 @@ import {
   CTABanner,
   CTABanner2,
   FAQ,
+  HelpCenter,
   Hero,
   IndustryStatus,
   Nav,
@@ -24,6 +25,7 @@ const App = () => {
       <OurTeam />
       <Testimonial />
       <CTABanner2 />
+      <HelpCenter />
     </>
   );
 };

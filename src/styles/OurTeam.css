@@ -7,6 +7,7 @@
 
   #team-list {
     display: none;
+    gap: 0.2rem;
   }
 
   #team-content {
@@ -27,8 +28,8 @@
     }
 
     button {
-      width: 40%;
-      margin-top: var(--size-200);
+      width: 60%;
+      margin-top: var(--size-100);
     }
   }
 }
@@ -39,8 +40,19 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: var(--size-100);
       order: 2;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  #our-team {
+    gap: var(--size-200);
+    #team-content {
+      button {
+        width: 20%;
+        margin-top: var(--size-100);
+      }
     }
   }
 }
@@ -48,15 +60,19 @@
 @media (min-width: 1024px) {
   #our-team {
     flex-direction: row;
+
     gap: var(--size-400);
     team-list {
       order: 1;
     }
 
     #team-content {
-      align-items: center;
-      text-align: center;
       order: 2;
+      gap: var(--size-600);
+
+      button {
+        width: 50%;
+      }
     }
   }
 }

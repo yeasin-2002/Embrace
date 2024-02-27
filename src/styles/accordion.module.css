@@ -1,0 +1,14 @@
+.accordion {
+  .accordionHeading {
+    margin: 0.5rem 0;
+    p {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--black-primary);
+      display: inline;
+    }
+  }
+  .accordionBody {
+    height: 0;
+    display: none;
+  }
+}

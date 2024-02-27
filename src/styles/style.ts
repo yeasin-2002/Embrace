@@ -1,6 +1,5 @@
 import './CTABanner.css';
 import './FAQ.css';
-import './Hero.css';
 import './IndustryStatus.css';
 import './OurTeam.css';
 import './OurWork.css';

@@ -1,5 +1,7 @@
 #CTABanner2 {
   margin: var(--size-800) 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   padding: var(--size-300) var(--size-400);
   display: flex;

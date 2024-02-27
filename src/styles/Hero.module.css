@@ -13,19 +13,8 @@
     line-height: var(--line-lg);
     color: var(--gray-700);
   }
-
-  #hero-cta {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    .hero-cta-btn {
-      padding: 1rem 2rem;
-      white-space: nowrap;
-    }
-  }
 }
-#hero-banner-wrapper {
+#heroBannerWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +34,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  #hero-banner-wrapper {
+  #heroBannerWrapper {
     img {
       display: block;
     }

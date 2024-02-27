@@ -1,0 +1,10 @@
+#heroCta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .heroCtaBtn {
+    padding: 1rem 2rem;
+    white-space: nowrap;
+  }
+}
