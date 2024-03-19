@@ -1,10 +1,16 @@
 #heroCta {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
-  .heroCtaBtn {
+  .CtaBtn {
     padding: 1rem 2rem;
     white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 500) {
+  #heroCta {
+    gap: 1rem;
   }
 }

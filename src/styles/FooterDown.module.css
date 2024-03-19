@@ -1,0 +1,23 @@
+#footerDown {
+  background-color: black;
+  color: white;
+  padding: var(--size-300) var(--size-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-top: 20px;
+  h4 {
+    color: var(--gray-300);
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: var(--size-200);
+
+    p {
+      color: var(--gray-300);
+    }
+  }
+}

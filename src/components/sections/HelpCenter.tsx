@@ -8,14 +8,10 @@ export const HelpCenter = ({ ...rest }: Props) => {
   return (
     <section {...rest} id={styles.HelpCenter}>
       <div>
-        {helpAccordionData.map((item) => {
-          return (
-            <Accordion
-              key={item.answer + item.question}
-              question={item.question}
-              answer={item.answer}
-            />
-          );
+        {helpAccordionData.map((item,) => {
+          return <Accordion key={item.answer + item.question} 
+           answer={item.answer} question={item.question}
+          />;
         })}
       </div>
       <div>

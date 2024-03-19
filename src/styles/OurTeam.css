@@ -13,7 +13,7 @@
   #team-content {
     display: flex;
     flex-direction: column;
-    gap: var(--size-600);
+    gap: var(--size-100);
     padding: var(--size-900) 0;
 
     h4 {
@@ -29,7 +29,6 @@
 
     button {
       width: 60%;
-      margin-top: var(--size-100);
     }
   }
 }

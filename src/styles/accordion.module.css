@@ -1,14 +1,27 @@
 .accordion {
-  .accordionHeading {
-    margin: 0.5rem 0;
-    p {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--black-primary);
-      display: inline;
-    }
-  }
-  .accordionBody {
-    height: 0;
-    display: none;
-  }
+  transition: all 0.3s ease;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--size-full);
+  border-bottom: 1px solid var(--gray-300);
+  cursor: pointer;
+}
+
+.answer {
+  transition: height 0.3s ease;
+  display: grid;
+  overflow: hidden;
+}
+.answerActive {
+  grid-row: 1fr;
+  opacity: 1;
+}
+
+.answerHidden {
+  grid-row: 0 fr;
+  opacity: 0;
 }

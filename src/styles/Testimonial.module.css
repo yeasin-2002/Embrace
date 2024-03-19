@@ -47,9 +47,11 @@
     background-color: var(--gray-secondary);
     border-radius: var(--size-200);
     padding: 0.5rem;
+    transition: all 0.2s ease-in;
 
-    .reviewerReview {
-      color: var(--gray-800);
+    &:hover {
+      background-color: var(---blue-primary);
+      color: var(--white-100);
     }
 
     .reviewerInfoContainer {

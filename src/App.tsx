@@ -2,6 +2,8 @@ import {
   CTABanner,
   CTABanner2,
   FAQ,
+  FooterDown,
+  FooterUp,
   HelpCenter,
   Hero,
   IndustryStatus,
@@ -26,6 +28,8 @@ const App = () => {
       <Testimonial />
       <CTABanner2 />
       <HelpCenter />
+      <FooterUp />
+      <FooterDown />
     </>
   );
 };

@@ -1,0 +1,17 @@
+#logoFull {
+  display: none;
+}
+
+#logoMini {
+  display: block;
+}
+
+@media screen and (min-width: 500px) {
+  #logoFull {
+    display: block;
+  }
+
+  #logoMini {
+    display: none;
+  }
+}

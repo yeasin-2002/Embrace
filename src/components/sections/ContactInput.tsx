@@ -9,10 +9,13 @@ export const ContactInput = ({ ...rest }: Props) => {
     <div id={styles.heroCta} {...rest}>
       <input
         type="text"
-        className="input-mail"
+        className={'input-mail'}
+        style={{
+          flex: 1,
+        }}
         placeholder="Enter your email..."
       />
-      <Button className={styles.heroCtaBtn + 'btn-primary'}>Lets Talk</Button>
+      <Button className={styles.CtaBtn + 'btn-primary'}>Lets Talk</Button>
     </div>
   );
 };

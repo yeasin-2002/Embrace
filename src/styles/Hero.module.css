@@ -1,11 +1,12 @@
 #hero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
+  width: var(--size-full);
 
   h1 {
-    font-size: var(--size-600);
+    font-size: 12vw;
     font-weight: 900;
   }
   p {
@@ -33,10 +34,28 @@
     }
   }
 }
+
 @media screen and (min-width: 768px) {
+  #hero {
+    justify-content: space-between;
+
+    P {
+      font-size: var(--text-2xl);
+    }
+  }
   #heroBannerWrapper {
     img {
       display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  #hero {
+    justify-content: space-between;
+
+    P {
+      font-size: var(--text-4xl);
     }
   }
 }

@@ -1,19 +1,31 @@
 import styles from '@/styles/accordion.module.css';
-import React from 'react';
+import { ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+
 interface Props extends React.ComponentProps<'div'> {
   question: string;
   answer: string;
 }
 
-export const Accordion = ({ answer, question, ...rest }: Props) => {
+export const Accordion = (props: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div {...rest}>
-      <div className={styles.accordion} key={answer + question}>
-        <div className={styles.accordionHeading}>
-          <p>{question} </p>
-        </div>
-        <div className={styles.accordionBody}> {answer} </div>
+    <div {...props} className={styles.accordion}>
+      <div className={styles.question} onClick={() => setIsOpen(!isOpen)}>
+        <h3>{props.question}</h3>
+        <ChevronDown
+          size={24}
+          style={{
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+            transition: 'transform 0.3s ease',
+          }}
+        />
       </div>
+      <p
+        className={`  ${styles.answer} ${isOpen ? styles.answerActive : styles.answerHidden}`}
+      >
+        {props.answer}
+      </p>
     </div>
   );
 };

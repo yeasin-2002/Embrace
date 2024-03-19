@@ -71,6 +71,23 @@ body {
   padding: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 2 4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 3 5rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  body {
+    padding: 3 8rem;
+  }
+}
+
 /* Shared Style  */
 
 .btn-primary {
